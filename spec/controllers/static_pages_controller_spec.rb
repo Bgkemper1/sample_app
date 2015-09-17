@@ -26,3 +26,21 @@ RSpec.describe StaticPagesController, type: :controller do
     end
   end
 end
+
+RSpec.describe StaticPagesController, type: :controller do
+  describe 'contact' do
+    it "renders the contact page" do
+      get :contact
+      expect(response).to render_template :contact
+    end
+  end
+end
+
+RSpec.describe StaticPagesController, type: :controller do
+  describe 'pictures' do
+    it "renders the pictures page" do
+      get :pictures
+      expect(response).to render_template :pictures
+    end
+  end
+end
