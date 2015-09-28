@@ -9,8 +9,15 @@
   <%= csrf_meta_tags %>
 
 </head>
+<!-- Semantic menu -->
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse"
+    <div class="ui four item menu">
+      <a class="active item">Editorials</a>
+      <a class="item">Reviews</a>
+      <a class="item">Upcoming Events</a>
+      <a class="item">Home</a>
+    </div>
+    <!-- <header class="navbar navbar-fixed-top navbar-inverse"
       <div class="container">
         <%= link_to "sample app", '#', id: "logo" %>
         <nav>
@@ -21,7 +28,7 @@
           </ul>
         </nav>
       </div>
-    </header>
+    </header> -->
     <div class="container">
       <%= yield %>
     </div>
